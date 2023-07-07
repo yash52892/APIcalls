@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="add_to_local(event)">
+        <label>Name
+            <input type="'text" name="username" autocomplete="given-name" required/>
+        </label>
+        
+        <label>Email id
+            <input type="'email" name="email" autocomplete="family-name" required>
+        </label>        
+        
+        <label>Phone number
+            <input type="'number" name="phonenumber" required/>
+        </label>
+        
+        <input type="submit"></input>
+    </form>
+    <ul id="list_of_users"></ul>
+</body>
+<script src="appointment_app.js"></script>
+</html>
