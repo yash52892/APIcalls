@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+</head>
+<body>
+    <form onsubmit="add_to_local(event)">
+        <label>Candy Name
+            <input type="'text" id="n" name="name" autocomplete="given-name" required/>
+        </label>
+        
+        <label>Catagory
+            <input type="'text" id="c" name="catagory" autocomplete="family-name" required>
+        </label>        
+        
+        <label>Price
+            <input type="'number" id="p" name="price" required/>
+        </label>
+
+        <label>Quantities
+            <input type="'number" id="q" name="quantity" required/>
+        </label>
+        
+        <button id="btn">Add items</button>
+        
+    </form>
+    <ul id="list_of_candies"></ul>
+
+</body>
+<script src="candy.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</html>
